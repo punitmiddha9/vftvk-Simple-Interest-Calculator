@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App – Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <h1>Simple Interest Calculator</h1>
+        <!-- Form Using tables -->
+        <form action="" onsubmit="return compute()">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="heading">Amount</td>
+                        <td><input type="number" id="amt"></td>
+                    </tr>
+                    <!-- Range Slider -->
+                    <tr>
+                        <td class="heading">Interest Rate</td>
+                        <td><input id="slider" type="range" min="1" max="100" step="1"><span id="slidebar"></span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="heading">No. of Years</td>
+                        <td>
+                            <select id="year">
+                                <option value="Select year">Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Using colspan to merge the two columns -->
+                        <td colspan="2"><button>Compute Interest</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+        <!-- Result Prints Here By Using JavaScript(script.js) -->
+        <span id="result"></span>
+        <!-- copyright text here -->
+        <h4>&copy Everyone Can Get Rich</h4>
+        
+    </div>
+    
+</body>
+</html>
